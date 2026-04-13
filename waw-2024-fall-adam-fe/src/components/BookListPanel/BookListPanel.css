@@ -1,0 +1,82 @@
+.books-list-panel {
+	padding: 20px 7px 20px 0;
+	border-radius: 4px;
+	background-color: #f5f7fa;
+}
+
+.books-list-panel-title {
+	font-size: 2.2rem;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: #050237;
+}
+
+.books-list-panel-container {
+	display: flex;
+	flex-direction: row;
+	background-color: #f5f7fa;
+	flex-wrap: wrap;
+	column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.book-list-panel-container {
+	margin-bottom: 20px;
+	padding: 0px 20px 5px 0px;
+}
+
+.book-list-panel-cover-image-container {
+	height: 259px;
+	width: 170px;
+	margin-right: 2px;
+	margin-left: 2px;
+	overflow: hidden;
+}
+
+.book-list-panel-cover-image-container img {
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+	object-fit: cover;
+}
+
+.book-list-panel-details-container {
+	margin-top: 8px;
+	flex: 1;
+	width: 170px;
+}
+
+.book-list-panel-title-and-author {
+	height: 70px;
+}
+
+.book-list-panel-title {
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.3;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2; 
+	-webkit-box-orient: vertical;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+.book-list-panel-author {
+	font-weight: 600;
+	font-size: 0.9rem;
+	opacity: 50%;
+	text-decoration: underline;
+	margin-top: 0.3rem;
+}
+
+.book-list-panel-title,
+.book-list-panel-author {
+	color: #050237;
+}
+
+.book-list-panel-status {
+	font-weight: 600;
+	font-size: 0.9rem;
+	bottom: 20px;
+}

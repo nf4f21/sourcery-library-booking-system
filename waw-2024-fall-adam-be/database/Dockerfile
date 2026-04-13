@@ -1,0 +1,6 @@
+FROM postgres:9
+ENV POSTGRES_USER=student
+ENV POSTGRES_PASSWORD=sourcery
+ENV POSTGRES_DB=sourcery
+	
+

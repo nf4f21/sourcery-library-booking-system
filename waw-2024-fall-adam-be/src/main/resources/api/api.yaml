@@ -1,0 +1,209 @@
+openapi: 3.0.0
+info:
+  title: API for library
+  version: 0.0.1
+
+servers:
+  - url: http://localhost:8080/api/v1
+paths:
+  /books:
+    post:
+      tags:
+        - books
+      description: Create a new book
+      operationId: saveNewBook
+      requestBody:
+        description: new book
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewBookDTO'
+      responses:
+        "200":
+          description: Created book
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BookDTO"
+    get:
+      tags:
+        - books
+      description: Get list of books
+      operationId: getBooks
+      parameters:
+        - name: pageNumber
+          in: query
+          description: Number of page
+          schema:
+            type: integer
+        - name: pageSize
+          in: query
+          description: Size of page
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: new created book
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BookPreviewDTO"
+  /books/{id}:
+    get:
+      tags:
+        - books
+      description: Get a book by id
+      operationId: getNewBook
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Book id
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Single book by id
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BookDetailsDTO"
+
+components:
+  schemas:
+    BookDTO:
+      type: object
+      properties:
+        book_id:
+          type: integer
+        cover_image:
+          type: string
+          format: binary
+        title:
+          type: string
+        author:
+          type: string
+        description:
+          type: string
+        format:
+          type: string
+        number_of_pages:
+          type: integer
+        publication_date:
+          type: string
+          format: date
+        publisher:
+          type: string
+        isbn:
+          type: string
+        edition_language:
+          type: string
+        series:
+          type: string
+        category:
+          type: string
+      required:
+        - book_id
+        - cover_image
+        - title
+        - author
+        - description
+        - format
+        - number_of_pages
+        - publication_date
+        - publisher
+        - isbn
+        - edition_language
+        - series
+        - category
+    BookPreviewDTO:
+      type: object
+      properties:
+        book_id:
+          type: integer
+        title:
+          type: string
+        author:
+          type: string
+        cover_image:
+          type: string
+          format: binary
+      required:
+        - book_id
+        - title
+        - author
+        - cover_image
+    BookDetailsDTO:
+      type: object
+      properties:
+        description:
+          type: string
+        format:
+          type: string
+        number_of_pages:
+          type: integer
+        publication_date:
+          type: string
+          format: date
+        publisher:
+          type: string
+        isbn:
+          type: string
+        edition_language:
+          type: string
+        series:
+          type: string
+        category:
+          type: string
+      required:
+        - description
+        - format
+        - number_of_pages
+        - publication_date
+        - publisher
+        - isbn
+        - edition_language
+        - series
+        - category
+    NewBookDTO:
+      type: object
+      properties:
+        cover_image:
+          type: string
+          format: binary
+        title:
+          type: string
+        author:
+          type: string
+        description:
+          type: string
+        format:
+          type: string
+        number_of_pages:
+          type: integer
+        publication_date:
+          type: string
+          format: date
+        publisher:
+          type: string
+        isbn:
+          type: string
+        edition_language:
+          type: string
+        series:
+          type: string
+        category:
+          type: string
+      required:
+        - cover_image
+        - title
+        - author
+        - description
+        - format
+        - number_of_pages
+        - publication_date
+        - publisher
+        - isbn
+        - edition_language
+        - series
+        - category

@@ -1,0 +1,124 @@
+.book-form-main-register {
+	height: 100vh;
+}
+
+.book-form-main {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 40%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.book-form-h1 {
+	color: black;
+	font-weight: 600;
+	margin-bottom: 20px;
+	font-size: 32px;
+}
+
+.book-form-input {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.book-form-label {
+	color: #b0b1c1;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Core Sans C', sans-serif;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.book-form-image-cover {
+	width: 220px;
+	height: 320px;
+	background-color: #e8e9ed;
+	color: #767692;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.book-form-image-cover .book-form-cloud-icon {
+	color: #a4a5b6;
+	margin-bottom: 5px;
+	font-size: 36px;
+}
+
+.book-form-text-upload {
+	text-decoration: underline;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.book-form-text-upload:hover {
+	color: #a4a5b6;
+}
+
+/* hide initial input button for file image*/
+.book-form-file-input {
+	display: none;
+}
+
+.book-form-custom-file-upload {
+	border: 1px solid #b0b1c1;
+	padding: 6px 12px;
+	cursor: pointer;
+	color: #aaa;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+
+.book-form-custom-file-upload:hover {
+	background-color: #f1f1f1;
+}
+
+.book-form-register-button {
+	width: 125px;
+	height: 50px;
+	background-color: #4568fb;
+	color: white;
+	border: none;
+	font-size: 13px;
+	font-weight: 600;
+	border-radius: 4px;
+	padding: 10px 20px;
+	margin-top: 40px;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.book-form-register-button:hover {
+	background-color: #3a5ad6;
+}
+
+.book-form-errors {
+	margin-top: 5px;
+	color: red;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.book-form-office-field {
+	display: flex;
+	align-items: center;
+	align-items: flex-start;
+	margin-bottom: 25px;
+	width: 100%;
+	gap: 30px;
+}
+
+.book-form-office-name-field {
+	width: 60%;
+}
+
+.book-form-office-count-field {
+	width: 40%;
+}

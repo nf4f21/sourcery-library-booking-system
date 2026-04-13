@@ -1,0 +1,53 @@
+#### REGISTER:
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "email": "test1@gmail.com",
+  "firstName": "testfirstname",
+  "lastName": "testlastname",
+  "phoneNumber": "testphonenumber",
+  "password": "Passwordtest10!",
+  "defaultOfficeName": "London"
+}
+
+
+#### LOGIN
+POST http://localhost:8080/api/v1/auth/authorize
+Content-Type: application/json
+
+{
+  "email": "test1@gmail.com",
+  "password": "Passwordtest10!"
+}
+
+> {%
+    client.global.set("auth_token", response.body.token);
+%}
+
+
+### REFRESH TOKEN
+POST http://localhost:8080/api/v1/auth/refresh
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzUxMiJ9.eyJ1c2VyUm9sZXMiOlsiVVNFUiJdLCJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTczMTMzNDU2NSwiZXhwIjoxNzMxMzM4MTY1fQ.yinipw3ss9qfk15hpCITkmELu2P3vhryB0UdFKgQYaY6C853vZw8mB8GmaUF9GuJcjRZ_suMgVaXNF_vzn_SfA"
+}
+
+
+###GET BOOKS
+GET http://localhost:8080/api/v1/books?pageSize=10&pageNumber=0
+Authorization: Bearer {{auth_token}}
+
+
+###GET BORROWED BOOKS
+GET http://localhost:8080/api/v1/borrowed-books
+Authorization: Bearer {{auth_token}}
+
+###GET OFFICE
+GET http://localhost:8080/api/v1/offices
+Authorization: Bearer {{auth_token}}
+
+###GET ACTIVE RESERVATIONS
+GET http://localhost:8080/api/v1/books/1/active-reservations
+Authorization: Bearer {{auth_token}}

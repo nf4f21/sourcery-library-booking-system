@@ -1,0 +1,150 @@
+.reservations-view {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.reservations-view-main-table.MuiTableContainer-root {
+	background-color: transparent;
+	box-shadow: none;
+	min-width: 1200px;
+}
+
+.reservations-view-book-label.MuiTableCell-root {
+	font-size: 15px;
+	font-weight: bold;
+	color: #acadbd;
+}
+
+.reservations-view-table-cell.MuiTableCell-root {
+	min-width: 120px;
+}
+
+.reservations-view h1 {
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: black;
+}
+
+.reservations-view-filter-and-sort {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 100%;
+	gap: 20px;
+	margin-bottom: 12px;
+
+	.reservations-view-filter {
+		width: 200px;
+	}
+
+	.reservations-view-sort {
+		width: 200px;
+	}
+}
+
+.reservations-view-row {
+	display: flex;
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+.reservations-view-book-info {
+	display: flex;
+	flex-direction: row;
+
+	.reservations-view-book-image {
+		width: 55px;
+		height: 100%;
+		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+		img {
+			height: 100%;
+			border-radius: 4px;
+		}
+	}
+
+	.reservations-view-book-details {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.reservations-view-book-title {
+		margin-left: 10px;
+		font-size: 20px;
+		font-weight: bold;
+
+		/*this is to make the title with ... at the end when it exceeds the width */
+		max-width: 300px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.reservations-view-book-author {
+		margin-left: 10px;
+		font-size: 14px;
+		color: #7c7c97;
+		font-weight: 600;
+		text-decoration: underline;
+	}
+}
+
+.reservations-view-book-info-right-element {
+	color: #7c7c97;
+	font-size: 14px;
+}
+
+.reservations-view-book-info-right-status {
+	.reservations-view-book-status-borrowed {
+		background-color: #dcdde4;
+		color: black;
+		font-weight: bold;
+		padding: 2px 3px 2px 3px;
+		text-align: center;
+		border-radius: 3px;
+		width: 70px;
+	}
+	.reservations-view-book-status-returned {
+		color: #7c7c97;
+		font-size: 14px;
+	}
+}
+
+.reservations-view-buttons-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 5%;
+	width: 100%;
+
+	.reservations-view-edit-button {
+		background-color: #e8e9ed;
+		color: black;
+		border-radius: 4px;
+		font-weight: 600;
+		text-align: center;
+		width: 70px;
+		text-transform: none;
+	}
+
+	.reservations-view-return-button {
+		background-color: #4568fb;
+		color: white;
+		border-radius: 4px;
+		font-weight: 600;
+		text-align: center;
+		width: 120px;
+		text-transform: none;
+	}
+
+	.reservations-view-edit-button:hover {
+		background-color: #dcdde4;
+	}
+
+	.reservations-view-return-button:hover {
+		background-color: #547bfa;
+	}
+}

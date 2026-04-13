@@ -1,0 +1,80 @@
+{
+  "bookDetailsResult": {
+    "bookId": 1,
+    "coverImage": "iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TRSktgnYo4pChOlkQFdFNq1CECqFWaNXB5NIvaNKQpLg4Cq4FBz8Wqw4uzro6uAqC4AeIs4OToouU+L+m0CLGg+N+vLv3uHsHCPUy06yuMUDTbTOViIuZ7KrY84oAIuhHCDMys4w5SUrCc3zdw8fXuxjP8j735wipOYsBPpF4lhmmTbxBPLVpG5z3icOsKKvE58SjJl2Q+JHristvnAtNFnhm2Eyn5onDxGKhg5UOZkVTI54kjqqaTvlCxmWV8xZnrVxlrXvyFwZz+soy12kOIYFFLEGCCAVVlFCGjRitOikWUrQf9/APNv0SuRRylcDIsYAKNMhNP/gf/O7Wyk+Mu0nBOND94jgfw0DPLtCoOc73seM0TgD/M3Clt/2VOjD9SXqtrUWPgL5t4OK6rSl7wOUOEHkyZFNuSn6aQj4PvJ/RN2WBgVsgsOb21trH6QOQpq6SN8DBITBSoOx1j3f3dvb275lWfz+lD3K7ulqJHAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+gKGBIQBLvT9cgAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAFUlEQVQI1wXBAQEAAACAEP9PF1CpMCnkBftjnTYAAAAAAElFTkSuQmCC",
+    "title": "The Annotated Turing: A Guided Tour Through Alan Turing's Historic Paper on Computability and the Turing Machine",
+    "author": "Charles Petzold",
+    "description": "Mathematician Alan Turing invented an imaginary computer.",
+    "format": "Paperback",
+    "numberOfPages": 528,
+    "publicationDate": "2017-06-22",
+    "publisher": "Vintage Publishing",
+    "isbn": "1784703931",
+    "editionLanguage": "English",
+    "series": "Art of Computer Programming",
+    "category": "Other Editions",
+    "bookCopies": [
+    {
+      "bookCopyId": 1,
+      "officeId": 1,
+      "bookId": 1,
+      "isAvailable": true
+    },
+    {
+      "bookCopyId": 2,
+      "officeId": 1,
+      "bookId": 1,
+      "isAvailable": false
+    },
+    {
+      "bookCopyId": 3,
+      "officeId": 1,
+      "bookId": 1,
+      "isAvailable": true
+    }
+  ]
+  },
+  "offices": [
+    {
+      "basicOffice": {
+        "officeId": 1,
+        "name": "Kaunas office"
+      },
+      "copiesAvailable": 3,
+      "address": "Kaunas address dasdsa asd sadsa 932932 asd asad dsad"
+    },
+    {
+      "basicOffice": {
+        "officeId": 2,
+        "name": "Vilnius office"
+      },
+      "copiesAvailable": 0,
+      "address": "Vilnius address asdas djkisajd 123213 asjd as dasd as"
+    },
+    {
+      "basicOffice": {
+        "officeId": 3,
+        "name": "Warsaw office"
+      },
+      "copiesAvailable": 1,
+      "address": "Warsaw address asdas djkisajd 123213 asjd as dasd as"
+    }
+  ],
+  "availabilityResult": false,
+  "activeReservationsResult": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "officeName": "Kaunas",
+      "borrowedFrom": "2024-12-07",
+      "returnDate": "2024-12-15"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "officeName": "London",
+      "borrowedFrom": "2024-12-07",
+      "returnDate": "2024-12-15"
+    }
+  ]
+}

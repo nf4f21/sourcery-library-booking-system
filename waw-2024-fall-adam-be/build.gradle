@@ -1,0 +1,62 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.4'
+	id 'io.spring.dependency-management' version '1.1.6'
+	id "org.flywaydb.flyway" version "10.19.0"
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+jar {
+    enabled = false
+}
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+	set('testcontainers.version', "1.19.8")
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.security:spring-security-test'
+	implementation 'io.jsonwebtoken:jjwt-api:0.12.5'
+	implementation 'org.jetbrains:annotations:24.0.0'
+	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.5'
+	implementation 'io.jsonwebtoken:jjwt-gson:0.12.5'
+	implementation 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'org.postgresql:postgresql:42.6.1'
+	runtimeOnly 'org.flywaydb:flyway-database-postgresql:10.15.0'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'com.h2database:h2:2.2.220'
+	implementation 'org.hibernate:hibernate-core:6.1.5.Final'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'org.flywaydb:flyway-core:10.19.0'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
+	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+	implementation 'jakarta.validation:jakarta.validation-api:3.1.0'
+	implementation 'org.mapstruct:mapstruct:1.6.2'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.2'
+	testImplementation 'org.testcontainers:junit-jupiter'
+	testImplementation 'org.testcontainers:postgresql'
+	testImplementation 'io.rest-assured:rest-assured:5.5.0'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

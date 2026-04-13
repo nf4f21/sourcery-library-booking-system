@@ -1,0 +1,130 @@
+.currently-reading-panel {
+    padding: 20px 0px 10px 0px;
+    border-radius: 4px;
+    background-color: #f5f7fa;
+}
+
+.currently-reading-panel-title {
+    font-size: 2.2rem;
+    margin-bottom: 15px; 
+    font-weight: bold;
+    color:  #050237;
+}
+
+.currently-reading-panel-books-container {
+    display: flex; 
+    flex-direction: column; 
+    background-color: rgb(229 231 235);
+    align-items: flex-start;
+    border-radius: 6px;
+}
+
+.currently-reading-panel-book-container {
+    margin-bottom: 10px; 
+    padding: 10px; 
+}
+
+.currently-reading-panel-book-info {
+    display: flex;
+    flex-direction: row; 
+}
+
+.currently-reading-panel-cover-image-container {
+    height: 122px;
+    width: 80px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.currently-reading-panel-cover-image-container img {
+    width: 100%; 
+    height: 100%;
+    border-radius: 6px; 
+    object-fit: cover;
+}
+
+.currently-reading-panel-book-details-container {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.currently-reading-panel-title-and-author {
+    row-gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.currently-reading-panel-book-title {
+    font-weight: 600; 
+    line-height: 1.3; 
+    display: -webkit-box;
+	-webkit-line-clamp: 3;
+    line-clamp: 3; 
+	-webkit-box-orient: vertical;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+.currently-reading-panel-book-author, 
+.currently-reading-panel-book-return-date {
+    font-weight: 600; 
+    font-size: 0.9rem; 
+}
+
+.currently-reading-panel-book-author {
+    opacity: 50%;
+    text-decoration: underline;
+    margin-bottom: 2px;
+}
+
+.currently-reading-panel-book-return-date {
+    color:  #3BA77A;
+}
+
+.currently-reading-panel-book-title,
+.currently-reading-panel-book-author {
+    color:  #050237;
+}
+
+.currently-reading-panel-book-button-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start; 
+    margin-top: 10px; 
+}
+
+.currently-reading-panel-book-edit,
+.currently-reading-panel-book-return {
+    width: 130px;
+    margin:3px 5px 0 5px; 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 3px; 
+    font-weight: 600 ;
+    cursor: pointer; 
+    text-align: center;
+    text-transform: none;
+}
+
+.currently-reading-panel-book-return{
+    background-color: #4568FB;
+    color: white;
+}
+
+.currently-reading-panel-book-edit {
+    background-color:  rgba(5, 2, 55, 0.1);
+    color: #050237; 
+}
+
+.currently-reading-panel-book-edit:hover {
+    background-color: rgba(5, 2, 55, 0.08);
+}
+
+.currently-reading-panel-book-return:hover {
+    background-color: #547bfa;
+}

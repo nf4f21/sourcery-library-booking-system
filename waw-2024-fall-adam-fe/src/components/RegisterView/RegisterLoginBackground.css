@@ -1,0 +1,57 @@
+.register-login-background-wave-box-background {
+    min-height: 100vh; 
+    margin-left: 26%;
+    display: flex;
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.register-login-background-wave-background {
+    display: block;
+    position: fixed;
+    height: 18%;
+    width: 44%;
+    background-color:#050237;
+    transform: scale(-1, 1);
+    bottom: 0;
+    opacity: 3%;
+    clip-path: ellipse(100% 100% at 0% 100%); 
+   
+}
+
+.register-login-background-rectangle-background {
+    height: 100%;
+    top:0;
+    display: block;
+    position: fixed;
+    background-color: #050237; 
+    right: 0;
+    width: 30%; 
+    opacity:3%;
+}
+  
+.register-login-background-circle-background {
+    background-color: #050237;
+    width: 37%;  
+    height: 80%;  
+    border-radius: 50%;
+    opacity: 2%;
+    position: fixed;
+    top: 40%;  
+    left:70%;
+    z-index: 10;
+}
+
+.register-login-background-circle-second-background {
+    background-color:#f5f7fa;
+    width: 40%;
+    height: 100%; 
+    border-radius: 50%;
+    position: fixed;
+    top: -17.8%; 
+    left: 48.5%; 
+}

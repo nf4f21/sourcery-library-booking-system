@@ -1,0 +1,240 @@
+.book-details-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	column-gap: 1.9rem;
+	transition: width 0.3s ease-in-out;
+}
+
+.book-details-image {
+	overflow: hidden;
+	width: 25%;
+	min-width: 100px;
+}
+
+.book-details-image img {
+	width: 100%;
+	height: auto; 
+	border-radius: 6px;
+}
+
+.book-details-info {
+	width: 60%;
+}
+
+.book-details-info-title {
+	font-size: 2.2rem;
+	font-weight: 600;
+	color: #050237;
+	line-height: 32px;
+	margin: 0 0 10px 0;
+}
+
+.book-details-info-author {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #050237;
+	opacity: 50%;
+	line-height: 20px;
+}
+
+.book-details-info-status-container {
+	display: flex;
+}
+
+.book-details-info-status {
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.book-details-info-description {
+	margin: 20px 0;
+	padding: 0 0 40px 0;
+	line-height: 20px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: #050237;
+	opacity: 50%;
+	text-align: justify;
+	white-space: pre-wrap;
+}
+
+.book-details-info-details-container.MuiPaper-root,
+.book-details-info-description-container.MuiPaper-root {
+	background-color: transparent;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.book-details-info-details-title,
+.active-reservations-view-table-title { 
+	margin: 30px 0 10px 0;
+	line-height: 24px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: #050237;
+}
+
+.book-details-info-details {
+	display: flex;
+	flex-direction: column;
+	column-gap: 4rem;
+	padding: 0 0 40px 0;
+}
+
+
+.book-details-info-details-element{
+	display: flex;
+	flex-direction: row;
+}
+
+.book-details-info-details-text {
+	line-height: 20px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: #050237;
+	opacity: 50%;
+	padding: 4px 0;
+	box-sizing: border-box;
+	width: 15rem;
+}
+
+
+.book-details-info-details-book-data {
+	line-height: 20px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #050237;
+	opacity: 50%;
+	padding: 4px 0;
+	width: 14rem;
+}
+
+.book-details-button-edit.MuiButtonBase-root{
+	margin: 15px 0;
+	background-color: #050237;
+    padding: 0.rem;
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 0.375rem;
+	cursor: pointer;
+	text-transform: none;
+	color: white;
+	font-size: 100%;
+}
+
+.book-details-button-edit-icon {
+	font-size: 18px;
+	color: #fff;
+	margin-right: 6px;
+}
+
+.book-details-button-edit-elements {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.book-details-button-edit:hover {
+	background-color: #2c2c2c;
+}
+
+.book-details-reservation-panel{
+	width:20%;
+}
+
+.active-reservations-view-table.MuiTableContainer-root {
+	background-color: transparent;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.active-reservations-view-table-header.MuiTableContainer-root {
+	display: table-header-group;
+}
+
+.active-reservations-view-table-label-employee.MuiTableCell-root,
+.active-reservations-view-table-label-office.MuiTableCell-root,
+.active-reservations-view-table-label-booked-from.MuiTableCell-root,
+.active-reservations-view-table-label-return-date.MuiTableCell-root {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color:#050237;
+	opacity: 30%;	
+}
+
+.active-reservations-view-table-label-employee.MuiTableCell-root,
+.active-reservations-view-row-employee.MuiTableCell-root {
+	 padding-left: 0; 
+}
+
+
+
+.active-reservations-view-table-label-booked-from.MuiTableCell-root,
+.active-reservations-view-row-borroed-from.MuiTableCell-root {
+	width: 10em;
+
+} 
+
+.active-reservations-view-table-label-return-date.MuiTableCell-root {
+	text-align: left;
+	padding-right:0;
+	width: 10rem;
+}
+
+.active-reservations-view-row-return-date.MuiTableCell-root,
+.active-reservations-view-row-borroed-from.MuiTableCell-root,
+.active-reservations-view-row-office.MuiTableCell-root,
+.active-reservations-view-row-employee.MuiTableCell-root {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color:#050237;
+	opacity: 50%; 
+}
+
+
+  
+@media (max-width: 768px) {
+	.book-details-container{
+		flex-direction: column;
+		width: 100%;
+		row-gap: 10px;
+	}
+	.book-details-image{
+		min-width:auto;
+	}
+
+	.book-details-info-details-text {
+		width:35%;
+	}
+
+	.book-details-info {
+		width: 100%;
+	}
+}
+  
+  @media (max-width: 480px) {
+	.book-details-container{
+		flex-direction: column;
+		row-gap: 0.5rem;
+		width: 100%;
+	}
+
+	.book-details-image{
+			min-width:auto;
+	}
+
+	.book-details-info {
+		width: 100%;
+	}
+	
+	.book-details-info-details-text {
+		width:40%;
+	}
+
+	.book-details-info-details-book-data {
+		width:50%;
+	}
+  }
